@@ -123,6 +123,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY,                       XK_Up,     spawn,          {.v = (const char*[]){ "brillo", "-A", "5", NULL } } },
+	{ MODKEY,                       XK_Down,   spawn,          {.v = (const char*[]){ "brillo", "-U", "5", NULL } } },
 
 	{ MODKEY,                       XK_Left,   shiftview,      {.i = -1} },
 	{ MODKEY,                       XK_Right,  shiftview,      {.i = +1} },
